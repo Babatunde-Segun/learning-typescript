@@ -1,5 +1,4 @@
 // Setting type as a feature of typescript
-
 let age: number;
 
 age = 12;
