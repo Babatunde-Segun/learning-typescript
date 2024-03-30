@@ -1,17 +1,13 @@
 // Setting type as a feature of typescript
 let age: number;
-
 age = 12;
-age: 0.1;
 
 // Setting type to string
 let userName: string;
-
 userName = "max";
 
 // Setting type to boolean
 let isInstructed: boolean;
-
 isInstructed = false;
 
 // Setting type to any: taking typescript back to javascript
@@ -30,8 +26,6 @@ person = {
   age: 21,
   isEmployed: true,
 };
-
-// person = {};
 
 // Setting type object in an array
 let personArray: {
