@@ -74,3 +74,13 @@ vincentIsLearningTSArray = [
     student: 1,
   },
 ];
+
+// Function & type
+
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+function print(value: any) {
+  console.log(value);
+}
