@@ -77,10 +77,26 @@ vincentIsLearningTSArray = [
 
 // Function & type
 
-function add(a: number, b: number): number {
+function addNumber(a: number, b: number): number {
   return a + b;
 }
 
 function print(value: any) {
   console.log(value);
 }
+
+// Generics
+
+function insertAtBegin<T>(array: T[], value: T) {
+  const newArray = [value, ...array];
+  return newArray;
+}
+
+const demoArray = [1, 2, 3];
+const updatedArray = insertAtBegin(demoArray, -1);
+
+const stringArray = insertAtBegin(["a", "b"], "d");
+
+const aArray = stringArray.pop(1);
+console.log(aArray);
+updatedArray[0].toPrecision(2);
