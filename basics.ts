@@ -81,11 +81,7 @@ function addNumber(a: number, b: number): number {
   return a + b;
 }
 
-function print(value: any) {
-  console.log(value);
-}
-
-// Generics
+// Generics<T>: to setting a general value which make it more flexibe when use function in typescript
 
 function insertAtBegin<T>(array: T[], value: T) {
   const newArray = [value, ...array];
@@ -97,6 +93,4 @@ const updatedArray = insertAtBegin(demoArray, -1);
 
 const stringArray = insertAtBegin(["a", "b"], "d");
 
-const aArray = stringArray.pop(1);
-console.log(aArray);
 updatedArray[0].toPrecision(2);
